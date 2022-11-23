@@ -11,7 +11,7 @@ export class SneakerService {
     sneakers: Sneaker[] = [
         {
           id:1,
-          img:'../assets/img-releases/r1.jpg',
+          img:'https://raw.githubusercontent.com/Nievas1000/Tp-angular/main/src/assets/img-releases/r1.jpg',
           brand:'adidas',
           name:'YEEZY BOOST 350 V2 FLAX',
           cantidad:1,
@@ -19,7 +19,7 @@ export class SneakerService {
         },
         {
           id:2,
-          img:'../assets/img-releases/r2.jpg',
+          img:'https://raw.githubusercontent.com/Nievas1000/Tp-angular/main/src/assets/img-releases/r2.jpg',
           brand:'Nike',
           name:'TOM SACHS X NIKECRAFT GENERAL PURPOSE SHOE',
           cantidad:1,
@@ -27,7 +27,7 @@ export class SneakerService {
         },
         {
           id:3,
-          img:'../assets/img-releases/r3.jpg',
+          img:'https://raw.githubusercontent.com/Nievas1000/Tp-angular/main/src/assets/img-releases/r3.jpg',
           brand:'Air Jordan',
           name:'AIR JORDAN 1 RETRO LOW OG UNC',
           cantidad:1,
@@ -35,7 +35,7 @@ export class SneakerService {
         },
         {
           id:4,
-          img:'../assets/img-releases/r4.jpg',
+          img:'https://raw.githubusercontent.com/Nievas1000/Tp-angular/main/src/assets/img-releases/r4.jpg',
           brand:'Nike',
           name:'SOCIAL STATUS X AIR PENNY 2 PLAYGROUND - UNIVERSITY BLUE',
           cantidad:1,
@@ -43,7 +43,7 @@ export class SneakerService {
         },
         {
           id:5,
-          img:'../assets/img-releases/r5.jpg',
+          img:'https://raw.githubusercontent.com/Nievas1000/Tp-angular/main/src/assets/img-releases/r5.jpg',
           brand:'Air Jordan',
           name:'SOCIAL STATUS X AIR PENNY 2 PLAYGROUND - BLACK',
           cantidad:1,
@@ -51,7 +51,7 @@ export class SneakerService {
         },
         {
           id:6,
-          img:'../assets/img-releases/r6.jpg',
+          img:'https://raw.githubusercontent.com/Nievas1000/Tp-angular/main/src/assets/img-releases/r6.jpg',
           brand:'Nike',
           name:'AIR JORDAN 1 RETRO HIGH OG YELLOW TOE',
           cantidad:1,
@@ -59,7 +59,7 @@ export class SneakerService {
         },
         {
           id:7,
-          img:'../assets/img-releases/r7.jpg',
+          img:'https://raw.githubusercontent.com/Nievas1000/Tp-angular/main/src/assets/img-releases/r7.jpg',
           brand:'Air Jordan',
           name:'WMNS DUNK LOW MAGMA ORANGE',
           cantidad:1,
@@ -67,7 +67,7 @@ export class SneakerService {
         },
         {
           id:8,
-          img:'../assets/img-releases/r8.jpg',
+          img:'https://raw.githubusercontent.com/Nievas1000/Tp-angular/main/src/assets/img-releases/r8.jpg',
           brand:'adidas',
           name:'WMNS AIR JORDAN 1 RETRO HIGH OG DENIM',
           cantidad:1,
