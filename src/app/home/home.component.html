@@ -1,0 +1,37 @@
+<main>
+    <app-app-navbar></app-app-navbar>
+    <app-img-home></app-img-home>
+</main>
+
+<div class="container text-center advertisements mt-5">
+    <div class="row row-cols-2">
+        <div class="col zone-left">
+            <div class="d-flex justify-content-center ">
+                <h4>TRIBUTE TO THE 90'S STAY HERE</h4>
+            </div>
+            <img src="../assets/img/model9.png" alt="">
+        </div>
+        <div class="col zone-right">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <h4>YEEZY BOOST 350 V2</h4>
+                </div>
+                <img src="../assets/img/model7.png" alt="">
+            </div>
+            <div>
+                <div class="d-flex justify-content-center">
+                    <h4>JORDAN 4 'OFF-WHITE'</h4>
+                </div>
+                <img src=".././assets/img/model2.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container text-center mt-4">
+    <h2>New Releases</h2>
+    <div class="row">
+        <div class="col" *ngFor="let sneaker of sneakers">
+            <app-card-sneaker [sneaker]="sneaker" [showButton]="true"></app-card-sneaker>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+main{
+    min-height: 100vh;
+    position: relative;
+}
+.zone-left img{
+    height: 700px;
+    width: 100%;
+    filter: brightness(92%);
+}
+.zone-left h4{
+    z-index: 1;
+    position: absolute;
+    color: rgb(224, 223, 223);
+    margin-top: 20%;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px rgba(56, 56, 56, 0.8);
+    width: 15%;
+}
+
+.zone-right h4{
+    z-index: 1;
+    position: absolute;
+    color: rgb(224, 223, 223);
+    margin-top: 10%;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px rgba(56, 56, 56, 0.8);
+}
+.zone-right img{
+    height: 345px;
+    width: 100%;
+    margin-bottom: 10px;
+    filter: brightness(90%);
+}

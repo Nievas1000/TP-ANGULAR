@@ -1,0 +1,33 @@
+<div class="modal-cart" *ngIf="show">
+    <div class="modal-dialog">
+        <div class="modal-content" *ngIf="sneakers.length > 0">
+          <div class="modal-header">
+            <div class="modal-title">
+              <h5>Cart</h5>
+            </div>
+            <h6 class="total-price">Total: ${{sneakerCartService.amountCart}}</h6>
+            <button (click)="hideModal()" type="button" class="btn-close mr-4" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="cards d-flex" *ngFor="let sneaker of sneakers">
+              <app-card-sneaker [sneaker]="sneaker"></app-card-sneaker>
+              <div >
+                <div class="cantidades d-flex" *ngIf="sneaker.cantidad < 5">
+                  <p><i class="fa fa-plus-circle pointer" aria-hidden="true" (click)="increaseAmount(sneaker)"></i></p>
+                    <h6>{{sneaker.cantidad}}</h6>
+                  <p><i class="fa fa-minus-circle pointer" aria-hidden="true" (click)="decreaseAmount(sneaker)"></i></p>
+                </div>
+                <div *ngIf="sneaker.cantidad == 5">
+                  <div class="alert alert-warning alert-stock" role="alert">
+                    ¡Stock Agotado!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="sneakers.length == 0" class="d-flex justify-content-center">
+          <h2>Carrito vacio</h2>
+        </div>
+      </div>
+  </div>

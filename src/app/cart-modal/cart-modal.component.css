@@ -1,0 +1,48 @@
+.modal-cart{
+    z-index: 1;
+    color: black;
+    width: 100%;
+    background-color: white;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+.modal-body{
+    width: 100%;
+}
+.cards{
+    margin-left: 5%;
+}
+.modal-title{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.total-price{
+    width: 40%;
+}
+.amount-sneaker{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.amount-sneaker *{
+    margin-right: 5%;
+}
+.cantidades{
+    margin-top: 70%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+}
+.cantidades *{
+    margin: 10px;
+}
+.alert-stock{
+    margin-top: 70%;
+}

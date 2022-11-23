@@ -1,0 +1,24 @@
+.input-search{
+    width: 15%;
+    background-color: transparent;
+}
+.input-search::placeholder{
+    color: gray;
+}
+.ul-nav *{
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+}
+.navbar{
+    z-index: 2;
+}
+h2{
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container-modal{
+    width: 30%;
+    height: 100%;
+    position: fixed;
+}

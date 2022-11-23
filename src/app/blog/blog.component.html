@@ -1,0 +1,55 @@
+<main>
+    <app-app-navbar></app-app-navbar>
+    <div *ngIf="images && images.length > 0" class="carousel-container">
+        <div *ngFor="let image of images let i = index">
+            <div class="title">
+                <h1 [ngClass]="{'image-active':selectedIndex === i + 1}">{{image.title}}</h1>
+            </div>
+            <div class="container-img">
+                <img
+                src="../../assets/img/blog{{selectedIndex}}.jpg"
+                [ngClass]="{'image-active':selectedIndex === i + 1}">
+            </div>
+        </div>
+        <div class="btns_carousel">
+            <i (click)="selectImage(selectedIndex - 1)" class="fa fa-arrow-left" aria-hidden="true"></i>
+            <i (click)="selectImage(selectedIndex + 1)" class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+    </div>
+
+</main>
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <div class="container">
+                    <div class="row row-cols-2">
+                        <div class="col items-blog" *ngFor="let image of images let i = index">
+                            <img [src]="image.img">
+                            <div class="title-zone-blog">
+                                <h5>{{image.title}}</h5>
+                            </div>
+                            <div class="description-img">
+                                <p>{{image.description}}</p>
+                            </div>
+                        </div>
+                    </div>  
+            </div>
+        </div>
+        <div class="col-4 zona-info">
+            <div class="zone-tag">
+                <ul>
+                    <li>#afewstore</li>
+                    <li>#afewstore</li>
+                    <li>#afewaddicted</li>
+                    <li>#afewgoods</li>
+                </ul>
+            </div>
+            <div class="zone-social">
+                <i class="fa fa-facebook-official pointer" aria-hidden="true"></i>
+                <i class="fa fa-instagram pointer" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square pointer" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-square pointer" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>

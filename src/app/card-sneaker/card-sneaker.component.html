@@ -1,0 +1,9 @@
+<div class="container-card pointer">
+    <img [src]="sneaker.img" alt="">
+    <p>{{sneaker.brand}}</p>
+    <h5>{{sneaker.name}}</h5>
+    <div *ngIf="showButton">
+        <h6>${{sneaker.price}}</h6>
+        <button *ngIf="sneaker.cantidad == 1" class="btn btn-secondary" (click)="addToCart(sneaker)">Add to Cart</button>
+    </div>
+</div>

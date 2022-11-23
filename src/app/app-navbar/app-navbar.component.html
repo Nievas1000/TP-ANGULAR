@@ -1,0 +1,24 @@
+<nav class="navbar">
+    <div class="container-fluid position-relative">
+        <input class="form-control input-search" type="search" placeholder="Search" aria-label="Search">
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <h2 class="pointer" [routerLink]="['']">Sneaker Club</h2>
+        </div>
+        <div class="items-nav">
+            <ul class="nav justify-content-end ul-nav">
+                <li [routerLink]="['']" class="nav-item pointer">
+                  New Releases
+                </li>
+                <li [routerLink]="['/blog']" class="nav-item pointer">
+                  Blog
+                </li>
+                <li (click)="showModal()" class="nav-item pointer">
+                  <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+                </li>
+              </ul>
+        </div>
+      </div>
+      <div class="position-absolute top-100 start-50 translate-middle container-modal">
+        <app-cart-modal [show]="show"></app-cart-modal>
+      </div>
+</nav>
